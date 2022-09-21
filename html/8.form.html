@@ -24,65 +24,66 @@
             => 또는 <lable>안에 텍스트와 <input>을 함께 넣어도 동일한 효과.
 
     -->
-    <ul>
-      <li>
-        <label for="userId">아이디 :</label>
-        <input type="text" placeholder="아이디를 입력하세요." id="userId" />
-        <!-- disabled -->
-      </li>
-      <li>
-        비밀번호 :
-        <input
-          type="password"
-          name="password"
-          id=""
-          placeholder="비밀번호를 입력하세요"
-          autofocus
-        />
-      </li>
-      <li>
-        나이 :
-        <input type="number" max="200" min="1" name="" id="" />
-      </li>
-      <li>
-        이미지 :
-        <input type="file" accept="image/*" name="" id="" />
-      </li>
-      <li>
-        취미 :
-        <label>
+
+    <form action="/server">
+      <ul>
+        <li>
+          <label for="userId">아이디 :</label>
+          <input type="text" placeholder="아이디를 입력하세요." id="userId" />
+          <!-- disabled -->
+        </li>
+        <li>
+          비밀번호 :
+          <input
+            type="password"
+            name="password"
+            id=""
+            placeholder="비밀번호를 입력하세요"
+            autofocus
+          />
+        </li>
+        <li>
+          나이 :
+          <input type="number" max="200" min="1" name="" id="" />
+        </li>
+        <li>
+          이미지 :
+          <input type="file" accept="image/*" name="" id="" />
+        </li>
+        <li>
+          취미 :
+          <label>
+            영화보기
+            <input type="checkbox" />
+          </label>
+          <input type="checkbox" name="" id="" />
           영화보기
-          <input type="checkbox" />
-        </label>
-        <input type="checkbox" name="" id="" />
-        영화보기
-        <input type="checkbox" name="" id="" />
-        드라마보기
-              </li>
+          <input type="checkbox" name="" id="" />
+          드라마보기
+        </li>
         <!-- input:radio: 여러개의 선택지 중 하나만 선택해야할 경우 사용 -->
         <li>
-        마케팅 수신 동의 :
-        <label>
-            동의 <input type="radio" name="marketing" value="1" />
-            미동의 <input type="radio" name="marketing" value="2" />
+          마케팅 수신 동의 :
+          <label>
+            동의
+            <input type="radio" name="marketing" value="1" />
+            미동의
+            <input type="radio" name="marketing" value="2" />
+          </label>
         </li>
 
         <!--
-            <form> : 서버에 작성한 양식(데이터)을 보낼 때 사용. 
-                => <form> 안에 <button> 클릭시 자동으로 동작.
-            action : 데이터에 전송할 서버를 지정.
-                => <form 안에서 enter 키 입력 시 sumit(전송)이 동작.
-            method : 데이터 전송 방법을 지정.
-                => get은 정보 받아올 때 사용. 주소창에 input 값 노출. 노출돼도 상관없는 정보만 나와야한다.
-                => post 서버에 데이터를 등록할 때 사용. 주소창에 데이터 노출 X
-        -->
-        <form action="/server"></form>
-        <ul> 
-        </ul>
-        <button type="summit">전송</button>
-        <button type="reset">초기화</button>
-
-    </ul>
-
+              <form> : 서버에 작성한 양식(데이터)을 보낼 때 사용. 
+                  => <form> 안에 <button> 클릭시 자동으로 동작.
+              action : 데이터에 전송할 서버를 지정.
+                  => <form 안에서 enter 키 입력 시 sumit(전송)
+              method : 데이터 전송 방법을 지정.
+                  => get은 정보 받아올 때 사용. 주소창에 input 값 노출. 노출돼도 상관없는 정보만 나와야한다.
+                  => post 서버에 데이터를 등록할 때 사용. 주소창에 데이터 노출 X
+          -->
+      </ul>
+      <button type="summit">전송</button>
+      <button type="reset">초기화</button>
+    </form>
   </body>
 </html>
