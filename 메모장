@@ -21,5 +21,7 @@ div는 의미가 없음 p는 문단의 의미???를 가짐
 
 cmd 꼭 해야하는지?
 
+나열: inline-block, float
 
+가운데: inline-block + text-align, width + margin 좌우 auto
 
