@@ -1,0 +1,24 @@
+#header {
+  background-color: #ddd;
+  position: relative;
+  width: auto;
+  height: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+#gnb {
+  text-align: center;
+  font-size: 0;
+}
+
+#gnbList {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+#gnbList li {
+  float: left;
+}
