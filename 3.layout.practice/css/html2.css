@@ -2,6 +2,11 @@
 #header {
   background-color: #ddd;
   position: relative;
+
+  overflow: hidden;
+  
+  animation: show 0.4s 1s backwards;
+ 
 }
 
 #logo {
@@ -75,7 +80,9 @@
 }
 
 .bannerList li {
-  background: center/cover no-repeat;
+  background: center/auto 100% no-repeat;
+  transition: 0.25s;
+  background-size: auto 100%;
 }
 
 .bannerList li:first-child {
@@ -92,7 +99,11 @@
 
 .bannerList li a {
   display: block;
-  height: 100%;
+  padding: 10px; 0
+  width: 100%;
+
+  transition: 0.25s 1s;
+
 }
 
 .bannerList li:hover {
@@ -101,6 +112,56 @@
 
 .bannerList li:nth-child(2) {
   margin: 0 10px;
+}
+
+.bntChat {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #000;
+  border-radius: 50%;
+
+  text-align: center;
+  line-height: 50px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+
+  animation: slideUp 0.25s, fadeIn 1s;
+}
+
+
+
+@keyframes slideUp {
+ form{
+  transform: translateY(20px);
+ }
+ /* to{
+  transform: translateY(0);
+ } */
+ 
+  /* from {
+    opacity: 0;
+    bottom: 10px;
+  } */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  from {
+    max-height: 0;
+  }
+
+  to{
+    max-height: 50px;
+  }
+  
 }
 
 /* .container {

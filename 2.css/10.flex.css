@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  width: 100px;
+}
+
+.container {
+  /* height: 500px; */
+  display: flex;
+  border: 3px solid black;
+  /* flex-direction: column; flex의 기본값은 row*/
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 700px;
+  /* flex-wrap: wrap-reverse; */
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: red;
+
+  flex-basis: 200px; /* 주축에 대한 아이템의 기본크기 */
+  /* flex-grow: 1; */
+  /* flex-shrink: 4; */
+}
+
+.box:nth-child(2) {
+  /* flex-glow: 1; */
+  background-color: blue;
+  /* flex-basis: 100px; */
+  /* flex-shrink: 1; */
+  flex: 1;
+}
+
+button {
+  width: 100px;
+}

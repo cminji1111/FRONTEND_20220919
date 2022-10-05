@@ -25,3 +25,37 @@ cmd 꼭 해야하는지?
 
 가운데: inline-block + text-align, width + margin 좌우 auto
 
+
+
+20221005 flex
+
+dispaly : flex;
+=> 플렉스박스로 바뀐다.
+=> 자식요소를 나열.
+
+flex-direction : 주축 방향을 바꾼다.
+=> 기본값 : row => 가로방향
+=> column 세로 방향
+
+justify-content : 주축에 대한 정렬
+align-items : 교차축에 대한 정렬
+align-self : 교차축에 아이템 자신에 대한 정렬 (개별적으로 정렬)
+
+flex-wrap : 아이템들의 크기가 컨테이너의 크기를 넘었을 때
+=> 줄바꿈 여부를 지정.
+
+아이템에 쓰는 속성
+flex-basis : 주축에 대한 최소 크기
+flex-grow : 여백을 가져가는 비율
+flex-shrink : 공간이 모자랄 때 줄이는 비율
+flex : grow shink basis 순으로 지정하는 단축 속성
+    => flex: n; => grow는 n으로 지정하고 shrink 1, basis는 0
+    => flex를 모든 아이템에 동일하게 1로 주면 컨텐츠 너비 상관없이 똑같은 크기로 지정.
+    => flex를 특정 요소에만 1주면 컨테이너 남은 여백을 특정 요소만 가져간다.
+
+
+
+<과제>
+1. 레이아웃 페이지 flew로 대체하기
+2. 유튜브 input 태그 처럼 자동으로 늘어나는 input 태그 만들기
+    => input 옆에 버튼이 있는데 크기에 따라 input만 늘어나게
