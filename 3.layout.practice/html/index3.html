@@ -5,20 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/3.layout.practice/css/common2.css" />
+    <link rel="stylesheet" href="/3.layout.practice/css/reset.css" />
+    <link rel="stylesheet" href="/3.layout.practice/css/common.css" />
     <link rel="stylesheet" href="/3.layout.practice/css/html3.css" />
   </head>
   <body>
+    
     <header id="header">
-      <h1>Logo</h1>
+      <h1 id="logo"><a href="">Logo</a></h1>
       <nav id="gnb">
-        <ul id="gnbList">
+        <ul id="gnbList" class="clearFix">
           <li><a href="">HTML</a></li>
           <li><a href="">CSS</a></li>
           <li><a href="">JS</a></li>
         </ul>
       </nav>
-      <h2>Yeji</h2>
+      <nav id="gnb2">
+      <button>버튼1</button>
+      <button>버튼2</button>
+    </nav>
     </header>
+    <main>
+      <section class="banner">
+        <h2>Yeji</h2>
+        <ul class="bannerList">
+          <li><img src="/0.assets/yeji.jfif" alt="" id="yeji1" /></li>
+          <li><img src="/0.assets/yeji01.jfif" alt="" id="yeji2"></a></li>
+          <li><img src="/0.assets/예지3.jfif" alt="" id="yeji3"></a></li>
+        </ul>
+      </section>
+    </main>
+    <div class="bntChat">채팅</div>
   </body>
 </html>

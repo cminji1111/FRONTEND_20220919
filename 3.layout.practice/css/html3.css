@@ -1,24 +1,200 @@
+/* 나열: inline-block, float */
+
 #header {
   background-color: #ddd;
   position: relative;
-  width: auto;
-  height: 50px;
-}
-
-h1 {
-  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #gnb {
-  text-align: center;
-  font-size: 0;
+  justify-content: space-between;
 }
+
+#gnb2 {
+  margin: 5px;
+}
+
+#logo {
+  font-size: 2rem;
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+/* h1 {
+  display: inline-block;
+  content: '';
+  position: top;
+  left: 50px;
+  bottom: 0;
+} */
 
 #gnbList {
-  display: inline-block;
-  font-size: 2rem;
+  display: flex;
+  height: 100%;
 }
 
+/* #gnbList {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+} */
+
 #gnbList li {
-  float: left;
+  /* float: left; */
+  width: 100px;
+  height: 100%;
+  text-align: center;
 }
+
+#gnbList li a {
+  display: block;
+  height: 100%;
+  padding: 10px 0;
+  /* width: 100px; */
+}
+
+#gnbList li a:hover {
+  background-color: #bbb;
+  color: white;
+  height: auto;
+}
+
+.banner {
+  margin-top: 70px;
+}
+
+.banner h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bannerList {
+  display: flex;
+  justify-content: center;
+}
+.bannerList li {
+  display: flex;
+  width: 300px;
+  height: 190px;
+  /* border: 3px solid black; */
+  /* margin: 0 5px; */
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+/* .bannerList li {
+  background: center/auto 100% no-repeat;
+  transition: 0.25s;
+  background-size: auto 100%;
+  border: 1px solid #000;
+}
+
+.bannerList li:first-child {
+  background-image: url('/0.assets/예지1.jfif');
+}
+
+.bannerList li:nth-child(2) {
+  background-image: url('/0.assets/예지2.jfif');
+}
+
+.bannerList li:last-child {
+  background-image: url('/0.assets/예지3.jfif');
+} */
+
+.bannerList li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 190px;
+
+  overflow: hidden;
+}
+
+.bannerList li:nth-child(2) {
+  margin: 0 10px;
+}
+
+.bannerList li:hover img {
+  height: 120%;
+}
+
+.bannerList li img {
+  height: 100%;
+  transition: 0.25s;
+}
+
+.bntChat {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #000;
+  border-radius: 50%;
+
+  text-align: center;
+  line-height: 50px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  animation: slideUp 0.25s, fadeIn 1s;
+}
+
+@keyframes slideUp {
+  form {
+    transform: translateY(20px);
+  }
+  /* to{
+  transform: translateY(0);
+ } */
+
+  /* from {
+    opacity: 0;
+    bottom: 10px;
+  } */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 50px;
+  }
+}
+
+/* .container {
+  text-align: center;
+  margin: 20 20;
+} */
+
+/* span {
+  position: static;
+  left: center;
+}
+.box {
+  width: 250px;
+  height: 450px;
+  border: 1px solid red;
+  float: left;
+  margin: 20px 5px;
+
+  overflow: hidden;
+}
+
+.box:hover {
+} */

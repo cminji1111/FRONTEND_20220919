@@ -69,7 +69,7 @@
 .bannerList {
   width: 470px;
   margin: 0 auto;
-}
+ }
 .bannerList li {
   width: 150px;
   height: 200px;
@@ -77,6 +77,7 @@
   float: left;
   /* margin: 0 5px; */
   overflow: hidden;
+  border: 2px solid black;
 }
 
 .bannerList li {
@@ -86,7 +87,7 @@
 }
 
 .bannerList li:first-child {
-  background-image: url('/0.assets/예지1.jfif');
+  background-image: url('/0.assets/yeji01.jfif');
 }
 
 .bannerList li:nth-child(2) {
@@ -94,7 +95,7 @@
 }
 
 .bannerList li:last-child {
-  background-image: url('/0.assets/예지3.jfif');
+  background-image: url('/0.assets/32320_21987_1540.jpg');
 }
 
 .bannerList li a {
@@ -107,7 +108,7 @@
 }
 
 .bannerList li:hover {
-  background-size: auto 200%;
+  background-size: auto 150%;
 }
 
 .bannerList li:nth-child(2) {
