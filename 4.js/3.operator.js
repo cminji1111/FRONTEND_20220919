@@ -47,6 +47,46 @@ console.log(score == '40000')
 console.log(score === '40000')
 console.log(false === '0')
 
-
 // 불일치 연산자와 부동등 연산자. => 일치하지 않으면 true, 일치 false
-console.log(score ! = "40000")
+console.log(score != '40000')
+
+var isTrue = true
+console.log(true || false) // true or flase => true
+console.log(false || false) // false of false => false
+console.log(false && false) // flase and ture =>
+console.log(!false) //false의 반전값 => true
+console.log(!false && false)
+console.log(2 > 1 && 1 < 10)
+
+/*
+    연결 연산자(문자열) : 좌항과 우항의 문자열을 연결하여 반환
+    문자열과 숫자에 연결 연산자를 사용해도 문자열로 반환
+        => 템플릿 리터럴 사용하는 것이 가독성이 좋다.
+*/
+
+var str = '안녕하세요' + 30 + ' 최 민지입니다.'
+console.log(str)
+
+var name = '최민지'
+var age = '30'
+var address = '인천'
+
+var greeting =
+  '안녕하세요 저는' + address + '에 사는' + age + '세' + name + '입니다.'
+
+console.log(greeting)
+
+// 템플릿 리터럴 : `백틱`안의 문자열에 ${}를 이용해 변수에 있는 값을 문자열에 포함시킨다.
+var greeting02 = `안녕하세요 저는 ${address}에 사는 ${age}세 ${name}입니다.`
+console.log(greeting02)
+
+// 현재 연도와 내 생년 year, birthYear 변수에 담아서 나이를 구한 뒤 age 변수에 담기
+
+var year = 2022
+var birthYear = 1993
+var age = year - birthYear + 1
+console.log(age)
+
+// 템플릿 리터럴로 소개하는 문장 console창에 출력해보기
+
+var greeting03 = `안녕하세요 저는 ${age}세 ${name}입니다.`

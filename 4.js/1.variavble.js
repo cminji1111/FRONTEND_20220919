@@ -56,6 +56,8 @@ console.log(num, result)
 // 문제 2. num02와 num03의 값을 서로 바꾸기.
 var num02 = 100
 var num03 = 200
+
+// 임시 공간에 num03을 저장
 var temp = num03
 num03 = num02
 num02 = temp
