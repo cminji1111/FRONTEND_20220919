@@ -49,6 +49,11 @@ console.log('a : ', a)
 let num = 2
 // let num = 3; 중복선언 허용하지 않는다.
 
+const PI = 3.14;
+// PI = 3; const(상수)는 할당이 안된다. 선언과 동시에 초기화를 해야한다.
+
+const NUM = 1; // 선언과 동시에 초기화를 해야한다.
+
 {
   // 블록 레벨 스코프를 지원
   let num = 3 // 지역변수
@@ -56,7 +61,7 @@ let num = 2
 
 console.log(num)
 
-// 선언 이전에 참조하는 것이 불가능하다.
+// 선언 이전에 참조하는 것이 불가능하다. => 선언과 초기화 따로 진행(TDZ : Temporary Dead Zone)
 // console.log(str); 선언 이전에 참조 오류
 let str = 'Hello'
 

@@ -120,7 +120,7 @@ console.log(typeof 함수이름); // function 출력
     화살표 함수(arrow function) : 화살표를 통해서 간략하게 함수를 정의
     - 코드블록을 생략하면 바로 값 return
     - 간략하게 표현 가능하기 때문에 콜백함수로 전달할 때 주로 사용 => 다른 함수의 인자로 전달
-    - this 바인딩 x => this를
+    - this 바인딩 x => this를 지정할 수 없다. 무조건 최상위 객체를 가르킨다.
 */
 let getMovie = () =>  {
     console.log("this : ", this)

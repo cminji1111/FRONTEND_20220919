@@ -77,3 +77,5 @@ pwd : 현재 경로
 npm -v
 npm install -g nodemon
 nodemon watch 파일명
+
+터미널 초기화 : 컨트롤 + c

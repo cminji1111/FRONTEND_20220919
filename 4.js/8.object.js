@@ -94,7 +94,8 @@ let player = {
 player.greeting();
 
 /* 
-    3. 화살표
+    3. 메서드로 화살표 함수를 지정하면 this 바인딩이 안된다.
+        => 최상위 객체를 가르키게 된다. => 브라우저 환경에서는 window 
 */
 
 
@@ -105,3 +106,8 @@ let car = {
     }
 }
 car.run(2);
+
+let car02 = {
+    speed: 60
+}
+

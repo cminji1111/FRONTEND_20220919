@@ -33,3 +33,29 @@ let car04 = new Car(100)
 car03.run(2)
 car04.run(3)
 car03.sayHi()
+
+
+let date = new Date()
+
+let arr = []
+let obj = {}
+
+let arr02 = new Array(10)
+console.log(Array.isArray(arr));
+console.log(arr instanceof Object)
+
+class Human extends Animal {
+  constructor()
+}
+
+class Male extends Human {
+  constructor(race, haircolor) {
+    super(race);
+    this.haircolor = haircolor
+  }
+}
+
+let male = new Male ("white", "blond")
+
+console.log(male.legs);
+
