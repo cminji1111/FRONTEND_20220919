@@ -114,3 +114,10 @@ while (result.length < 6) {
   // Array.prototype.includes : 값이 있는지 확인하는 함수
   if (result.includes(randomNum)) result.push(randomNum)
 }
+
+console.log(result)
+
+console.log(parseInt('1.1')) // 문자열을 정수 만든다. => 실수를 정수로 만드는 용도로도 사용한다.
+console.log(parseFloat('1.1')) // 문자열을 실수로 만든다.
+
+// 값이 NaN인지 확인하는 함수 => NaN === NaN은 false가 나오므로 isNaN
