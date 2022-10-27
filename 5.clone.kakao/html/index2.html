@@ -7,16 +7,13 @@
     <title>Kakao</title>
 
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/3.layout.practice/css/reset.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="/5.clone.kakao/css/layout.css" />
     <style></style>
-
-    <script src="/5.clone.kakao/js/index.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -43,7 +40,7 @@
                   d="M0.264 0.004L13.566 0.004 13.566 15.487 0.264 15.487z"
                 ></path>
               </defs>
-              <g data-v-37d948ec="" fill="" fill-rule="evenodd">
+              <g data-v-37d948ec="" fill-rule="evenodd">
                 <g data-v-37d948ec="">
                   <path
                     data-v-37d948ec=""
@@ -98,20 +95,31 @@
         </h1>
         <nav id="gnb">
           <ul id="gnbList">
-            <li><a href="#" class="active">카카오</a></li>
-            <ul class="depth02">
-              <li><a href="">버튼1</a></li>
-              <li><a href="">버튼2</a></li>
-              <li><a href="">버튼3</a></li>
-            </ul>
-            <li><a href="./news.html" class="active">뉴스</a></li>
-            <li><a href="#" class="active">기술과 서비스</a></li>
-            <ul class="depth02">
-              <li><a href="">버튼1</a></li>
-              <li><a href="">버튼2</a></li>
-              <li><a href="">버튼3</a></li>
-            </ul>
-            <li><a href="#" class="active">약속과 책임</a></li>
+            <li>
+              <a href="./html/news.html" class="active">카카오</a>
+              <ul class="depth02">
+                <li><a href="">버튼</a></li>
+                <li><a href="">버튼2</a></li>
+                <li><a href="">버튼3</a></li>
+              </ul>
+            </li>
+            <li><a href="./html/news.html" class="active">뉴스</a></li>
+            <li>
+              <a href="#" class="active">기술과 서비스</a>
+              <ul class="depth02">
+                <li><a href="">버튼</a></li>
+                <li><a href="">버튼2</a></li>
+                <li><a href="">버튼3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="active">약속과 책임</a>
+              <ul class="depth02">
+                <li><a href="">버튼</a></li>
+                <li><a href="">버튼2</a></li>
+                <li><a href="">버튼3</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <div id="headerBtns">
@@ -150,23 +158,29 @@
             <li>
               <button>
                 <svg
-                  data-v-ef6c51ca=""
+                  data-v-41fcfff3=""
                   data-v-74f96920=""
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 25 24"
-                  class="ico_korean"
+                  viewBox="0 0 24 24"
+                  class="ico_language"
                 >
-                  <g data-v-ef6c51ca="" fill="none" fill-rule="evenodd">
-                    <g data-v-ef6c51ca="" stroke-width="1.5">
+                  <g data-v-41fcfff3="" fill="none" fill-rule="evenodd">
+                    <g data-v-41fcfff3="" stroke-width="1.35">
                       <path
-                        data-v-ef6c51ca=""
+                        data-v-41fcfff3=""
                         d="M19.353 9.914c0 5.213-4.226 9.438-9.438 9.438-5.213 0-9.438-4.225-9.438-9.438C.477 4.702 4.702.477 9.915.477c5.212 0 9.438 4.225 9.438 9.437z"
-                        transform="translate(-1375 -169) translate(79.5 145) translate(1248 24) translate(50 2)"
+                        transform="translate(-1402 -23) translate(1358 23) translate(44) translate(2 2)"
                       ></path>
                       <path
-                        data-v-ef6c51ca=""
-                        d="M19.205 11.52c-.451-2.769-2.357-4.129-4.643-4.227-2.434-.023-3.491 1.71-4.267 2.615l-.594.69c-1.361 1.238-2.384 1.633-3.876 1.588C2.897 12.153.888 9.456.888 7.224"
-                        transform="translate(-1375 -169) translate(79.5 145) translate(1248 24) translate(50 2)"
+                        data-v-41fcfff3=""
+                        stroke-linejoin="round"
+                        d="M13.662 9.914c0 5.213-3.748 9.438-3.748 9.438s-3.747-4.225-3.747-9.438c0-5.212 3.747-9.437 3.747-9.437s3.748 4.225 3.748 9.437z"
+                        transform="translate(-1402 -23) translate(1358 23) translate(44) translate(2 2)"
+                      ></path>
+                      <path
+                        data-v-41fcfff3=""
+                        d="M.876 7.018L18.952 7.018M.876 12.811L18.952 12.811"
+                        transform="translate(-1402 -23) translate(1358 23) translate(44) translate(2 2)"
                       ></path>
                     </g>
                   </g>
@@ -199,7 +213,7 @@
                 </svg>
               </button>
             </li>
-            <li>
+            <li class="btnSide">
               <button>
                 <svg
                   data-v-f943b36a=""
@@ -252,5 +266,13 @@
         </div>
       </div>
     </header>
+    <main>
+      <div class="titleBox">
+        <div class="wrapperTitle">
+          <img src="https://www.kakaocorp.com/page/" alt="달력 아이콘" />
+          <h2>오늘의 카카오</h2>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

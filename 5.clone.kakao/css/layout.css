@@ -1,6 +1,8 @@
 :root {
-  --iconsBg : #eee
-  --main-color : #e4e4e4
+  --iconsBg: #eee;
+  --main-color: #e4230e;
+  --desk-wrapper-width: 1296px;
+  --tablet-wrapper-width: ;
 }
 
 html {
@@ -15,14 +17,18 @@ body {
   position: fixed;
   width: 100%;
   left: 0;
-  top: -72;
-  border-bottom: 1px solid black;
+  transform: translateY(0);
+  border-bottom: 1px solid #eee;
 
-  transition: 1s;
+  transition: transform 0.25s;
 }
 
-#header.active {
-  top: 0;
+#header.onTop {
+  border-bottom: none;
+}
+
+#header.hide {
+  transform: translateY(-100%);
 }
 
 #header .wrapperHeader {
@@ -31,7 +37,7 @@ body {
   align-items: center;
 
   /* height: 72px; */
-  max-width: 952px;
+  max-width: var(--desk-wrapper-width);
   margin: 0 auto;
 }
 
@@ -46,7 +52,6 @@ body {
 }
 
 #logo a svg {
-  stroke: black;
   height: 100%;
   width: 100%;
 }
@@ -55,11 +60,11 @@ body {
   display: flex;
 }
 
-#gnbList > li a {
+#gnbList > li > a {
   display: block;
   height: 72px;
   line-height: 72px;
-  padding: 0px 28px;
+  padding: 0 28px;
 
   font-weight: 500;
   color: #888;
@@ -69,14 +74,20 @@ body {
   color: #000;
 }
 
-#gnbList .depth02 {
+/* depth01 on 클래스 가질 때 depth02 보이게 */
+#gnbList li.on .depth02 {
   display: flex;
+}
+
+/* depth02 기본적으로 안보이게 */
+#gnbList .depth02 {
+  display: none;
   padding: 15px 20px;
   border-radius: 30px;
 
   position: absolute;
   bottom: -30px;
-  
+
   background-color: black;
 
   color: #fff;
@@ -84,12 +95,13 @@ body {
 
 #gnbList .depth02 a {
   padding: 10px 0;
-  margin: 5px;
+  margin: 0 5px;
 }
 
-#gnbList :nth-child(2) a {
+#gnbList li:nth-child(2) a {
   margin: 0 20px;
 }
+
 #headerBtns {
   width: 200px;
 }
@@ -103,7 +115,7 @@ body {
   margin: 0 10px;
 }
 
-  ///////////////////// .headerBtns button {
+#headerBtns button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,10 +127,12 @@ body {
   border: none;
   background: none;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 #headerBtns svg {
-  width: 25px;
+  width: 100%;
   stroke: black;
 }
 
@@ -126,20 +140,65 @@ body {
   display: none;
 }
 
+/* 타이틀 영역 */
+
+.titleBox {
+  position: fixed;
+  width: 100%;
+  top: 73px;
+  left: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.wrapperTitle {
+  display: flex;
+  align-items: center;
+  max-width: var(--desk-wrapper-width);
+  margin: 0 auto;
+  height: 72px;
+}
+
+.wrapperTitle img {
+  width: 36px;
+}
+
+.wrapperTitle h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 1439px) {
   #header .wrapperHeader {
-    max-width: 952px;
+    max-width: var(--tablet-wrapper-width);
   }
 }
 
 @media screen and (max-width: 1023px) {
   #header .wrapperHeader {
-    max-width: 630px;
+    max-width: var(--mobile-wrapper-width);
     height: 60px;
   }
 
   #gnb {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    transform: translate(100%);
+    transition: 0.4s;
+  }
+
+  #gnb.on {
+    transform: translate(0);
+  }
+
+  #gnbList {
+    flex-direction: column;
+    align-items: center;
   }
 
   #headerBtns li:nth-child(2),
@@ -152,7 +211,7 @@ body {
   }
 }
 
-/* min-width */
+/* min-width : 최소 ~ 이상*/
 
 @media (min-width: 1023px) {
   #headerBtns li button:hover {
