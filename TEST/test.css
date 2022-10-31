@@ -1,0 +1,106 @@
+a {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  line-height: 60px;
+  background-color: #eee;
+}
+
+#logo {
+  position: absolute;
+  left: 30px;
+
+  font-size: 2rem;
+}
+
+#gnb {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gnbList {
+  display: flex;
+}
+
+#gnbList li {
+  width: 100px;
+  text-align: center;
+}
+
+#gnbList li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+}
+
+#gnbList li:hover {
+  display: block;
+  height: 60px;
+  background-color: #bbb;
+  color: white;
+}
+
+.container1 {
+  width: auto;
+  height: 300px;
+  background-color: #ddd;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container2 #button {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 #button li {
+  width: 50px;
+}
+
+.container3 {
+  width: auto;
+  height: 250px;
+  background-color: #eee;
+}
+
+.container3 li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 200px;
+  margin: 25px 50px;
+  overflow: hidden;
+}
+
+.container3 li img {
+  height: 100%;
+}
+
+.container3 img:hover {
+  height: 110%;
+}
+
+.container3 ul {
+  display: flex;
+  justify-content: center;
+}
+
+.bntChat {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+
+  text-align: center;
+  line-height: 50px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
